@@ -28,14 +28,8 @@ class TabBar : UIView {
         }
     }
     func buttonAction(sender: UIButton!) {
-        switch sender.tag {
-        case 0:
-            
-        case 1:
-        case 2:
-        case 4:
-        default: break
-        }
+        
+        
     }
 }
 extension TabBar {
