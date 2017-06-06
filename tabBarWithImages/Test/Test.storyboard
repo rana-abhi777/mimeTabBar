@@ -9,6 +9,60 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Tab1 View Controller-->
+        <scene sceneID="4fl-N8-W4J">
+            <objects>
+                <viewController storyboardIdentifier="Tab1ViewController" id="4ke-yT-0ty" customClass="Tab1ViewController" customModule="tabBarWithImages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cO7-XT-fS5"/>
+                        <viewControllerLayoutGuide type="bottom" id="cJI-Sf-WTl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dHt-ig-Rte">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.68896812080000003" green="0.0" blue="0.14088716439999999" alpha="0.46266163789999998" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wae-Wp-bLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9668" y="519"/>
+        </scene>
+        <!--Tab2 View Controller-->
+        <scene sceneID="Jf9-Tl-jdE">
+            <objects>
+                <viewController storyboardIdentifier="Tab2ViewController" id="evw-b5-g6Z" customClass="Tab2ViewController" customModule="tabBarWithImages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ndo-Fh-sEq"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Qe-eh-rmv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y9p-Qq-L4O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.050980392159999999" green="0.83529411760000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PE2-cG-emJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9028" y="519"/>
+        </scene>
+        <!--Tab3 View Controller-->
+        <scene sceneID="wX0-0o-Wxa">
+            <objects>
+                <viewController storyboardIdentifier="Tab3ViewController" id="m5K-O0-c4S" customClass="Tab3ViewController" customModule="tabBarWithImages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NRv-2T-vow"/>
+                        <viewControllerLayoutGuide type="bottom" id="fir-1r-d6R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c9J-2T-Jo7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.56862745100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYM-oo-aMo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8394" y="522"/>
+        </scene>
         <!--Test View Controller-->
         <scene sceneID="mGO-jS-McF">
             <objects>
@@ -23,20 +77,10 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nv6-DP-ZMm" customClass="TabBar" customModule="tabBarWithImages" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="594" width="375" height="73"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="phr-hu-RU4"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="tabCount">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="tabImage0" value="home"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="tabImage1" value="cardboard"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="tabImage2" value="message"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="tabImage3" value="me"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="tabImage4" value="pic"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVK-g8-xCt">
                                 <rect key="frame" x="112.5" y="28" width="150" height="45"/>
@@ -48,23 +92,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2J-qL-fCB">
+                                <rect key="frame" x="0.0" y="74" width="375" height="520"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="520" id="hqf-sM-pzb"/>
+                                </constraints>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TVK-g8-xCt" firstAttribute="top" secondItem="Ds8-ug-ido" secondAttribute="bottom" constant="8" id="08r-Ly-1YL"/>
+                            <constraint firstAttribute="trailing" secondItem="V2J-qL-fCB" secondAttribute="trailing" id="55k-ZL-KT7"/>
                             <constraint firstItem="SIt-4S-WB1" firstAttribute="top" secondItem="Nv6-DP-ZMm" secondAttribute="bottom" id="HXx-hG-1XV"/>
                             <constraint firstItem="Nv6-DP-ZMm" firstAttribute="leading" secondItem="EIs-HC-1g1" secondAttribute="leading" id="RyQ-GL-OOO"/>
                             <constraint firstAttribute="trailing" secondItem="Nv6-DP-ZMm" secondAttribute="trailing" id="jWb-F0-cJJ"/>
                             <constraint firstItem="TVK-g8-xCt" firstAttribute="centerX" secondItem="EIs-HC-1g1" secondAttribute="centerX" id="pJT-lw-zLi"/>
+                            <constraint firstItem="V2J-qL-fCB" firstAttribute="leading" secondItem="EIs-HC-1g1" secondAttribute="leading" id="vej-iF-nXf"/>
+                            <constraint firstItem="Nv6-DP-ZMm" firstAttribute="top" secondItem="V2J-qL-fCB" secondAttribute="bottom" id="wJW-9p-PQk"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="V2J-qL-fCB" id="Sco-Gc-cGt"/>
                         <outlet property="viewTabs" destination="Nv6-DP-ZMm" id="WmS-jz-lG6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BxQ-Wx-qWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6220" y="-510"/>
+            <point key="canvasLocation" x="-8202.3999999999996" y="-235.23238380809596"/>
         </scene>
     </scenes>
 </document>
