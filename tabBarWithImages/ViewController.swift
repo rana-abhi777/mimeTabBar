@@ -8,7 +8,7 @@
 
 import UIKit
 import EZSwiftExtensions
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate {
     
     //MARK: OUTLETS
     @IBOutlet var viewTab: UIView!

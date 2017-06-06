@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="mGO-jS-McF">
+            <objects>
+                <viewController storyboardIdentifier="TestViewController" id="kh7-zT-wzN" customClass="TestViewController" customModule="tabBarWithImages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ds8-ug-ido"/>
+                        <viewControllerLayoutGuide type="bottom" id="SIt-4S-WB1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EIs-HC-1g1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nv6-DP-ZMm" customClass="TabBar" customModule="tabBarWithImages" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="594" width="375" height="73"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="phr-hu-RU4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVK-g8-xCt">
+                                <rect key="frame" x="112.5" y="28" width="150" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="MCp-XU-bHl"/>
+                                    <constraint firstAttribute="width" constant="150" id="Pa5-a4-AId"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TVK-g8-xCt" firstAttribute="top" secondItem="Ds8-ug-ido" secondAttribute="bottom" constant="8" id="08r-Ly-1YL"/>
+                            <constraint firstItem="SIt-4S-WB1" firstAttribute="top" secondItem="Nv6-DP-ZMm" secondAttribute="bottom" id="HXx-hG-1XV"/>
+                            <constraint firstItem="Nv6-DP-ZMm" firstAttribute="leading" secondItem="EIs-HC-1g1" secondAttribute="leading" id="RyQ-GL-OOO"/>
+                            <constraint firstAttribute="trailing" secondItem="Nv6-DP-ZMm" secondAttribute="trailing" id="jWb-F0-cJJ"/>
+                            <constraint firstItem="TVK-g8-xCt" firstAttribute="centerX" secondItem="EIs-HC-1g1" secondAttribute="centerX" id="pJT-lw-zLi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewTabs" destination="Nv6-DP-ZMm" id="WmS-jz-lG6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BxQ-Wx-qWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5188" y="-367.46626686656674"/>
+        </scene>
+    </scenes>
+</document>

@@ -19,6 +19,11 @@
 		214EF8C81EE5760C00959B8D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EF8C71EE5760C00959B8D /* Protocols.swift */; };
 		214EF8CA1EE5916A00959B8D /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EF8C91EE5916A00959B8D /* profileViewController.swift */; };
 		214EF8CC1EE5918300959B8D /* cardboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EF8CB1EE5918300959B8D /* cardboardViewController.swift */; };
+		21F0524E1EE67AC000944BDF /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F0524D1EE67AC000944BDF /* Test.storyboard */; };
+		21F052501EE67AD000944BDF /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0524F1EE67AD000944BDF /* TestViewController.swift */; };
+		21F052521EE67ADE00944BDF /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F052511EE67ADE00944BDF /* Tab1ViewController.swift */; };
+		21F052541EE67AE800944BDF /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F052531EE67AE800944BDF /* Tab2ViewController.swift */; };
+		21F052561EE67AF600944BDF /* Tab3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F052551EE67AF600944BDF /* Tab3ViewController.swift */; };
 		F0841FDFE9F8488B1E5F00C4 /* Pods_tabBarWithImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46BD24B145F32289D67FD18 /* Pods_tabBarWithImages.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +42,11 @@
 		214EF8C71EE5760C00959B8D /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		214EF8C91EE5916A00959B8D /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		214EF8CB1EE5918300959B8D /* cardboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardboardViewController.swift; sourceTree = "<group>"; };
+		21F0524D1EE67AC000944BDF /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		21F0524F1EE67AD000944BDF /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		21F052511EE67ADE00944BDF /* Tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		21F052531EE67AE800944BDF /* Tab2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		21F052551EE67AF600944BDF /* Tab3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab3ViewController.swift; sourceTree = "<group>"; };
 		9148D6EF8D97B2B779E52D37 /* Pods-tabBarWithImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabBarWithImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-tabBarWithImages/Pods-tabBarWithImages.release.xcconfig"; sourceTree = "<group>"; };
 		C46BD24B145F32289D67FD18 /* Pods_tabBarWithImages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tabBarWithImages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2D144A2BC46BF1E8B21739 /* Pods-tabBarWithImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabBarWithImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tabBarWithImages/Pods-tabBarWithImages.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +85,7 @@
 		214EF8A81EE52DE500959B8D /* tabBarWithImages */ = {
 			isa = PBXGroup;
 			children = (
+				21F0524A1EE67AC000944BDF /* Test */,
 				214EF8BE1EE5432700959B8D /* controllers */,
 				214EF8BB1EE52E2200959B8D /* tabEverything */,
 				214EF8A91EE52DE500959B8D /* AppDelegate.swift */,
@@ -106,6 +117,34 @@
 				214EF8CB1EE5918300959B8D /* cardboardViewController.swift */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		21F0524A1EE67AC000944BDF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				21F0524B1EE67AC000944BDF /* Controllers */,
+				21F0524D1EE67AC000944BDF /* Test.storyboard */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		21F0524B1EE67AC000944BDF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21F0524C1EE67AC000944BDF /* Tabs */,
+				21F0524F1EE67AD000944BDF /* TestViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		21F0524C1EE67AC000944BDF /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				21F052511EE67ADE00944BDF /* Tab1ViewController.swift */,
+				21F052531EE67AE800944BDF /* Tab2ViewController.swift */,
+				21F052551EE67AF600944BDF /* Tab3ViewController.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 		47B10D49A967AAEB45F0B798 /* Frameworks */ = {
@@ -189,6 +228,7 @@
 			files = (
 				214EF8B41EE52DE500959B8D /* LaunchScreen.storyboard in Resources */,
 				214EF8B11EE52DE500959B8D /* Assets.xcassets in Resources */,
+				21F0524E1EE67AC000944BDF /* Test.storyboard in Resources */,
 				214EF8AF1EE52DE500959B8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,15 +288,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F052501EE67AD000944BDF /* TestViewController.swift in Sources */,
 				214EF8BD1EE538C300959B8D /* TabBar.swift in Sources */,
 				214EF8C61EE575BA00959B8D /* Extensions.swift in Sources */,
 				214EF8C81EE5760C00959B8D /* Protocols.swift in Sources */,
 				214EF8AC1EE52DE500959B8D /* ViewController.swift in Sources */,
+				21F052561EE67AF600944BDF /* Tab3ViewController.swift in Sources */,
 				214EF8CC1EE5918300959B8D /* cardboardViewController.swift in Sources */,
 				214EF8AA1EE52DE500959B8D /* AppDelegate.swift in Sources */,
 				214EF8C21EE5437D00959B8D /* picsViewController.swift in Sources */,
 				214EF8CA1EE5916A00959B8D /* profileViewController.swift in Sources */,
+				21F052521EE67ADE00944BDF /* Tab1ViewController.swift in Sources */,
 				214EF8C01EE5433F00959B8D /* homeViewController.swift in Sources */,
+				21F052541EE67AE800944BDF /* Tab2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

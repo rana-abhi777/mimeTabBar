@@ -8,7 +8,8 @@
 
 import Foundation
 
-protocol DelegateTab: class {
-    func keepTabCount(selectedIndex: Int)
+@objc protocol DelegateTab: class {
+    @objc optional func keepTabCount(selectedIndex: Int)
+    func fetchData(tabNames: [String], tabCount: Int, r: Int, g: Int, b: Int, a: Int)
     
 }
