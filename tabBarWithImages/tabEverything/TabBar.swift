@@ -10,21 +10,77 @@ import Foundation
 import UIKit
 import EZSwiftExtensions
 
-class TabBar : UIView {
+@IBDesignable
+open class TabBar : UIView {
     //MARK: VARIABLES
     var backGroundColor = UIColor()
     var delegate: DelegateTab?
-    //MARK: FUNCTIONS
-    init () {
-        super.init()
+    var count: Int?
+    var imageNames = [String]()
+    
+    @IBInspectable
+    open var tabBackgroundColor: UIColor = UIColor.white {
+        didSet {
+            self.backgroundColor = self.tabBackgroundColor
+        }
+    }
+    @IBInspectable
+    open var tabCount : Int = 0 {
+        didSet {
+            self.count = self.tabCount
+        }
+    }
+    //
+    @IBInspectable
+    open var tabImage0 : String = "" {
+        didSet {
+            self.imageNames.append(tabImage0)
+        }
+    }
+    @IBInspectable
+    open var tabImage1 : String = "" {
+        didSet {
+            self.imageNames.append(tabImage1)
+        }
+    }
+    @IBInspectable
+    open var tabImage2 : String = "" {
+        didSet {
+            self.imageNames.append(tabImage2)
+        }
+    }
+    @IBInspectable
+    open var tabImage3 : String = "" {
+        didSet {
+            self.imageNames.append(tabImage3)
+        }
+    }
+    @IBInspectable
+    open var tabImage4 : String = "" {
+        didSet {
+            self.imageNames.append(tabImage4)
+            print(self.imageNames)
+        }
         
-        delegate = self
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
+    // MARK: - Initializers
+//    override init(){
+//        super.init()
+//    }
+//    
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        
+//    }
+//    
+//    required public init(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+
+    
+    //MARK: FUNCTIONS
     func changeSelectedBackground(_ selectedIndex: Int) {
         for view in self.subviews as [UIView] {
             if let btn = view as? UIButton {
@@ -61,34 +117,34 @@ class TabBar : UIView {
     func buttonAction(sender: UIButton!) {
         print(sender.tag)
         changeSelectedBackground(sender.tag)
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//
-//        switch sender.tag {
-//        case 0:
-//            guard let homeVC = storyBoard.instantiateViewController(withIdentifier: "homeViewController") as? homeViewController else { return }
-//            self.addChildViewController(homeVC)
-//            contentViewVC.addSubview(homeVC.view)
-//            
-//        case 1:
-//            guard let homeVC = storyBoard.instantiateViewController(withIdentifier: "picsViewController") as? picsViewController else { return }
-//            self.addChildViewController(homeVC)
-//            contentViewVC.addSubview(homeVC.view)
-//            
-//        case 2:
-//            guard let homeVC = storyBoard.instantiateViewController(withIdentifier: "profileViewController") as? profileViewController else { return }
-//            self.addChildViewController(homeVC)
-//            contentViewVC.addSubview(homeVC.view)
-//            
-//        case 3:
-//            guard let homeVC = storyBoard.instantiateViewController(withIdentifier: "cardboardViewController") as? cardboardViewController else { return }
-//            self.addChildViewController(homeVC)
-//            contentViewVC.addSubview(homeVC.view)
-//            
-//        default: break
-//        }
-//        self.view.bringSubview(toFront: self)
-//    }
-    
+        //        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        //
+        //        switch sender.tag {
+        //        case 0:
+        //            guard let homeVC = storyBoard.instantiateViewController(withIdentifier: "homeViewController") as? homeViewController else { return }
+        //            self.addChildViewController(homeVC)
+        //            contentViewVC.addSubview(homeVC.view)
+        //
+        //        case 1:
+        //            guard let homeVC = storyBoard.instantiateViewController(withIdentifier: "picsViewController") as? picsViewController else { return }
+        //            self.addChildViewController(homeVC)
+        //            contentViewVC.addSubview(homeVC.view)
+        //
+        //        case 2:
+        //            guard let homeVC = storyBoard.instantiateViewController(withIdentifier: "profileViewController") as? profileViewController else { return }
+        //            self.addChildViewController(homeVC)
+        //            contentViewVC.addSubview(homeVC.view)
+        //
+        //        case 3:
+        //            guard let homeVC = storyBoard.instantiateViewController(withIdentifier: "cardboardViewController") as? cardboardViewController else { return }
+        //            self.addChildViewController(homeVC)
+        //            contentViewVC.addSubview(homeVC.view)
+        //
+        //        default: break
+        //        }
+        //        self.view.bringSubview(toFront: self)
+        //    }
+        
     }
 }
 
